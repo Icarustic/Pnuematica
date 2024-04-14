@@ -1,0 +1,7 @@
+pluginManagement {
+    repositories {
+        mavenLocal()
+        gradlePluginPortal()
+        maven { url 'https://files.minecraftforge.net/maven' }
+    }
+}
