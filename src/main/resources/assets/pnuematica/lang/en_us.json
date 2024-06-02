@@ -1,0 +1,16 @@
+{
+  "item.pnuematica.zircon": "Zircon",
+  "item.pnuematica.wrist_gear": "Wrist Gear",
+  "item.pnuematica.mech_fan": "Mech Fan",
+  "item.pnuematica.wall_of_fire_bow": "Ignium SteamShot",
+  "item.pnuematica.monad_lamp": "Monads Lamp",
+  "item.pnuematica.pocket_watch": "Pocket Watch",
+
+
+  "block.pnuematica.zircon_block": "Block of Zircon",
+  "block.pnuematica.deepslate_cobblestone_block": "Deepslate Cobblestone",
+  "block.pnuematica.bejeweledrecord_block": "RecordTape Block",
+  "block.pnuematica.decoratedbricks_block": "Decorated Bricks",
+  "block.pnuematica.greenticketsiding_block": "Green TicketSiding Block",
+  "itemGroup.pnuematicatab": "Pnuematica Tab"
+}

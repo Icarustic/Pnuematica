@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "pnuematica:zircon"
+    }
+  },
+  "result": {
+    "item": "pnuematica:zircon_block"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#$#",
+    " # "
+  ],
+  "key": {
+    "$": {
+      "item": "minecraft:cobblestone"
+    },
+    "#": {
+      "item": "minecraft:cobbled_deepslate"
+    }
+  },
+  "result": {
+    "count": 6,
+    "item": "pnuematica:deepslate_cobblestone_block"
+  }
+}

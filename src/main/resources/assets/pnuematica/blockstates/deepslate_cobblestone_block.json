@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "pnuematica:block/deepslate_cobblestone_block" }
+  }
+}
