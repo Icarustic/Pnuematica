@@ -41,8 +41,8 @@ public class MechFanItem extends Item {
             applyForceToNearbyMobs(player, directionVector, forceMagnitude);
 
 
-            // Spawn arrow particles to visualize wind direction
-            spawnWindParticles(level, player, directionVector);
+            // Spawn particles to visualize wind direction
+            spawnWindParticles(level, player);
 
 
             // Send the pitch value to the chat
@@ -85,25 +85,26 @@ public class MechFanItem extends Item {
         }
     }
 
-    private void spawnWindParticles(Level pLevel, Player pPlayer, Vec3 directionVector) {
-        int particleCount = 20; // Adjust this value to control the number of particles
+    private void spawnWindParticles(Level pLevel, Player pPlayer) {
+        int particleCount = 50; // Adjust this value to control the number of particles
 
-        // Spawn wind particles in the calculated direction
+        // Get the player's view direction
+        Vec3 viewDirection = pPlayer.getViewVector(1.0F);
+
+        // Spawn smoke particles around the player
         for (int i = 0; i < particleCount; i++) {
-            double x = pPlayer.getX();
-            double y = pPlayer.getY() + pPlayer.getEyeHeight() / 2.0D;
-            double z = pPlayer.getZ();
+            double x = pPlayer.getRandomX(1.0D);
+            double y = pPlayer.getRandomY() + 0.5D;
+            double z = pPlayer.getRandomZ(1.0D);
 
-            // Add a small random offset to the position to prevent all particles from spawning in the same spot
-            x += pPlayer.getRandom().nextGaussian() * 1.5D;
-            y += pPlayer.getRandom().nextGaussian() * 0.5D;
-            z += pPlayer.getRandom().nextGaussian() * 1.5D;
+            // Calculate the particle's velocity based on the player's view direction
+            double motionX = viewDirection.x * 0.1D;
+            double motionY = viewDirection.y * 0.1D;
+            double motionZ = viewDirection.z * 0.1D;
 
-            Vec3 particleVector = directionVector.normalize().scale(1.0D);
-            pLevel.addParticle(ParticleTypes.SMOKE, x, y, z, particleVector.x, particleVector.y, particleVector.z);
+            pLevel.addParticle(ParticleTypes.SMOKE, x, y, z, motionX, motionY, motionZ);
         }
     }
-
 
     private Vec3 getDirectionVector(float yaw, float pitch) {
         // Convert yaw and pitch to radians
