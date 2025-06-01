@@ -40,6 +40,10 @@ public class Moditems {
     public static final RegistryObject<Item> Wall_Of_Fire_Bow = Items.register("wall_of_fire_bow",
             () -> new WallOfFireBowItem(new Item.Properties().tab(ModCreativeModTab.Pnuematica_Tab).stacksTo(1)));
 
+    public static final RegistryObject<Item> ADULT_SASUKE_SWORD = Items.register("adult_sasuke_sword",
+            () -> new net.sameer.pnuematica.item.AdultSasukeSwordItem(
+                    new Item.Properties().tab(ModCreativeModTab.Pnuematica_Tab).stacksTo(1)));
+
 
 
 
