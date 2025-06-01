@@ -11,8 +11,13 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.sameer.pnuematica.block.ModBlocks;
 import net.sameer.pnuematica.item.Moditems;
 import org.slf4j.Logger;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+
 
 // The value here should match an entry in the META-INF/mods.toml file
+
 @Mod(Pnuematica.MOD_ID)
 public class Pnuematica {
     public static final String MOD_ID = "pnuematica";
