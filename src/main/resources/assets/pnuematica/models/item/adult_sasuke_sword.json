@@ -4,7 +4,7 @@
   "model": "pnuematica:models/item/AdultSasukeSword.obj",
   "flip-v": true,
   "textures": {
-    "#texture": "pnuematica:item/texture"
+    "#texture": "pnuematica:textures/item/texture.png"
   },
   "display": {
     "thirdperson_righthand": {
