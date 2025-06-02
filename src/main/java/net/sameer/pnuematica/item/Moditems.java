@@ -1,6 +1,8 @@
 package net.sameer.pnuematica.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -41,8 +43,8 @@ public class Moditems {
             () -> new WallOfFireBowItem(new Item.Properties().tab(ModCreativeModTab.Pnuematica_Tab).stacksTo(1)));
 
     public static final RegistryObject<Item> AdultSasukeSword = Items.register("adult_sasuke_sword",
-            () -> new Item(new Item.Properties().tab(ModCreativeModTab.Pnuematica_Tab)));
-
+            () -> new SwordItem(Tiers.DIAMOND,6,-2.8F,new Item.Properties().tab(ModCreativeModTab.Pnuematica_Tab)));
+// 6 = dmg diamond=3 and the +3 , -2.8 is speed
 
 
 
