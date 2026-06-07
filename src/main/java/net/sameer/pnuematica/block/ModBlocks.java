@@ -43,7 +43,6 @@ public class ModBlocks {
 
 
 
-
     //strength is how long it takes to break
     private static <T extends Block> RegistryObject<T> registerBlocks(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = Blocks.register(name, block);
